@@ -1,0 +1,67 @@
+<div class="masthead">
+    <header>
+        <div class="background-info"></div>
+        <a href="{{ site.baseurl }}" class="info">
+            <img src="http://gravatar.com/avatar/2c5f73ce08b339317d69892fd6db84db" alt="">
+            <h1>{{ site.title }}</h1>
+            <span class="blog-description">{{ site.sub_name }}</span>
+        </a>
+
+        <ul class="icons">
+            <li>
+                <a href="https://twitter.com/rands0n">
+                    <span class="icon icon-twitter">{% include icon-twitter.svg %}</span>
+                </a>
+            </li>
+            <li class="icon-item">
+                <a href="https://github.com/rands0n">
+                    <span class="icon icon-github">{% include icon-github.svg %}</span>
+                </a>
+            </li>
+            <li class="icon-item">
+                <a href="{{ site.url }}/index.xml">
+                    <span class="icon icon-rss">{% include icon-rss.svg %}</span>
+                </a>
+            </li>
+        </ul>
+
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}">Blog</a></li>
+                <li><a href="/talks/">Talks</a></li>
+                <li><a href="/projects/">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="masthead-mobile">
+    <div class="user-info">
+        <h1>
+            <a href="{{ site.baseurl }}">{{ site.title }}</a>
+        </h1>
+        <span class="blog-description">{{ site.sub_name }}</span>
+    </div>
+
+    <a href="{{ site.baseurl }}">
+        <img src="http://gravatar.com/avatar/2c5f73ce08b339317d69892fd6db84db" alt="{{ site.title }}">
+    </a>
+
+    <ul class="icons">
+        <li>
+            <a href="https://twitter.com/rands0n">
+                <span class="icon icon-twitter">{% include icon-twitter.svg %}</span>
+            </a>
+        </li>
+        <li class="icon-item">
+            <a href="https://github.com/rands0n">
+                <span class="icon icon-github">{% include icon-github.svg %}</span>
+            </a>
+        </li>
+        <li class="icon-item">
+            <a href="{{ site.url }}/index.xml">
+                <span class="icon icon-rss">{% include icon-rss.svg %}</span>
+            </a>
+        </li>
+    </ul>
+</div>

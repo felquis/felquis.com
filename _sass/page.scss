@@ -1,0 +1,13 @@
+.page {
+    a {
+        color: $default-color;
+        position: relative;
+        border-bottom: 1px dotted #aaa;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    a:hover {
+        border-bottom-color: #999;
+    }
+}

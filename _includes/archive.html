@@ -1,0 +1,25 @@
+<div class="archive">
+    <h1 class="recent-articles">Recent Articles</h1>
+
+    <ul class="posts">
+        {% for post in site.posts %}
+            {% if post.language != 'pt' %}
+                <li class="post-item">
+                    <a href="{{ post.url }}">
+                        <time class="post-date" datetime="{{ post.date }}">
+                            {{ post.date | date: "%B %d, %Y" }}
+
+                            {% if post.br %}
+                            <img src="/images/flag_brazil.png" class="br" alt="Portuguese Post">
+                            {% endif %}
+                        </time>
+                        <h2 class="post-title">
+                            {{ post.title }}
+                        </h2>
+                        <p class="post-excerpt">{% if post.description %}{{post.description}} {%else%} {{post.excerpt}}{%endif%}</p>
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor; %}
+    </ul>
+</div>
