@@ -148,7 +148,7 @@ A question mark makes a part of a pattern "optional", meaning it may occur zero 
 To use an operator like `*` or `+` on more than one element at a time, you can use parentheses. A part of regular expression that is enclosed in parentheses counts as a single element as far as the operators following it are concerned.
 
 {% highlight bash %}
-/boo+(hoo)+/i #=> Boohoooohoohooo
+/boo+(hoo+)+/i #=> Boohoooohoohooo
 {% endhighlight %}
 
 The first and second `+` characters apply only to the second `o` in `boo` and `hoo`, respectively. The third `+` applies to the whole group `(hoo+)`, matching one or more sequences like that.
