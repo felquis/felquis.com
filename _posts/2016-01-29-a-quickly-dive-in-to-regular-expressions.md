@@ -4,9 +4,31 @@ title: "A Quickly Dive In To Regular Expressions"
 date: 2016-01-29
 ---
 
-Search for patterns, things that can be found on text or just remove these HTML tags from a description of a product on a ecommerce system. To search for this in regular language is so hard. However, we have a Regular Expression's.
+Hello, how about forgetting a little routine and reality and take a trip to the interior of youf mind? Discover new, different concepts. When go back, things will not be as normal as before because strangest symbols will be part of your day-to-day life.
 
 <!--more-->
+
+Inspired by operating their own neurons, discover the fascinating world of Regular Expressions.
+
+## Preseting the Regular Expression
+
+So, in order to start our trip, nothing like a presentation of the subject, because, after all, what's Regular Expression?
+
+Well sumerized, regular expression is a forma method to specify a text pattern.
+
+More detailed, is a composition of symbols, characters with a special function, which grouped among themselves and with literal characters form a sequence, a expression. This is expression is interpreted as a rule that indicates a success or failure depending on the input. It's exactly all the conditions of the expression.
+
+Or as accepted variations also can be said that is:
+
+- a way to find a text that you do not remember exactly how, but have no idea of possible variations;
+- a way for a programmer to specify complex patterns that can be searched and married in a string;
+
+Or formally speaking is:
+
+- as a game, in the begining it's difficult, but after knowing all the rules, just play and enjoy;
+- as a recipe with ingredients and a proper order to add them to the mixture;
+
+Above all, a Regular Expression is **fun**.
 
 ## Learn more about history of (re|regex)
 
