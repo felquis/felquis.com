@@ -81,8 +81,8 @@ It's more easily to find your pattern testing by a match. When you want one word
 The website I recommend to use is [regex101.com](http://regex101.com/). You can put a string by example and test your pattern through test string below.
 
 {% highlight linenos %}
-/[123456789]/ # "In 1992" #=> 1992
-/[0-9]/ # "In 1992" #=> 1992
+/[123456789]+/ # "In 1992" #=> 1992
+/[0-9]+/ # "In 1992" #=> 1992
 /\d+/ # "In 1992" #=> 1992
 {% endhighlight %}
 
