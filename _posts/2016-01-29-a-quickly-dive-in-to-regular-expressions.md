@@ -14,7 +14,7 @@ Inspired by operating their own neurons, discover the fascinating world of Regul
 
 So, in order to start our trip, nothing like a presentation of the subject, because, after all, what's Regular Expression?
 
-Well sumerized, regular expression is a forma method to specify a text pattern.
+Well sumerized, regular expression is a formal method to specify a text pattern.
 
 More detailed, is a composition of symbols, characters with a special function, which grouped among themselves and with literal characters form a sequence, a expression. This is expression is interpreted as a rule that indicates a success or failure depending on the input. It's exactly all the conditions of the expression.
 
@@ -175,6 +175,8 @@ The following example is removed from the book because this is a good example to
 
 {% highlight bash %}
 /\b\d+ (ping|cow|chicken)s?\b/
+"15 pigs" #=> true
+"15 pigchickens" #=> false
 {% endhighlight %}
 
 <img src="/images/posts/mechanism_of_matching.svg" style="margin: 0 auto;">
