@@ -100,6 +100,8 @@
                 text-decoration: none;
                 -webkit-transition: color .2s cubic-bezier(.4,0,.2,1);
                 transition: color .2s cubic-bezier(.4,0,.2,1);
+                font-family: 'Noto Serif Regular', serif;
+                font-size: 1em;
 
                 &:hover {
                     color: $default-color;
