@@ -4,9 +4,7 @@ layout: default
 
 <div class="post post-page">
     <div class="post-content">
-        <div class="post-title">
-            <h1>{{ page.title }}</h1>
-        </div>
+        <h4>{{ page.title }}</h4>
 
         <div class="post-meta">
             <time class="post-meta-date" datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time>
@@ -21,10 +19,17 @@ layout: default
             {{ content }}
         </div>
     </div>
+</div>
 
-    <hr class="hr">
+<h3>About {{ site.title }}</h3>
 
-    <div class="post-comments">
-        {% include disqus.html %}
-    </div>
+<div>
+    <img src="/images/rands0n.jpg" style="width: 150px; float: left; margin: 0 1.4em 1.4em 0;" alt="">
+
+    <p>
+        Hey! I'm a developer trying building some rock solid systems using Ruby and Ruby on Rails. In my free time I like barbecue and drink some artisan beer.
+    </p>
+    <p>
+        I'd love to hear your questions and comments on this article! <a href="https://twitter.com/rands0n">Mention me on twitter</a>, <a href="mailto:orandson@gmail.com">shoot me an email</a>.
+    </p>
 </div>

@@ -5,56 +5,32 @@
 
 $default-color: #4E854B;
 
-@import 'base', 'post', 'page';
+@import 'base', 'post';
 
 body {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-
-    line-height: 1.8;
-
-    background: url(../images/texture-white.png) repeat;
+    background: #FFFFFF;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 20px;
 
     .container {
-        .content {
-            margin: 0 auto;
-            max-width: 42em;
-            padding-top: 6em;
-
-            @media(max-width: 650px) {
-                padding: 6em 1em;
-            }
-        }
-    }
-
-    @media (min-width: 1000px) {
-       .container {
-            margin-left: 16em;
-            padding: 6em 5em 4em;
-        }
-    }
-
-    @media (min-width: 800px) {
-        .container {
-            margin-left: 12em;
-            padding: 5em 3em 3em;
-        }
-    }
-
-    @media (min-width: 570px) {
-        .container {
-            padding: 2em;
-        }
-        .container {
-            padding: 1.5em 1em 1em;
-        }
-    }
-
-    @media(max-width: 650px) {
-        font-size: 14px;
-        line-height: 1.4;
+        max-width: 650px;
+        margin: 0 auto;
     }
 }
 
-@import 'masthead', 'archive', 'syntax-highlight', 'icons';
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.4em;
+    font-size: 14px;
+}
+
+.post-title {
+    display: block;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+@import 'syntax-highlight';
