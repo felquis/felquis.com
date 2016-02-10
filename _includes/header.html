@@ -31,9 +31,6 @@
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" href="index.xml">
 
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700,300|Open+Sans:700,300,400|Noto+Serif' rel='stylesheet' type='text/css'>
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -41,7 +38,9 @@
 <body class="{{ page.layout }}">
     <main>
 
-        {% include masthead.html %}
-
         <div class="container">
+            <h4>
+                <a href="{{ site.baseurl }}">{{ site.title }}</a>
+            </h4>
+
             <div class="content">
