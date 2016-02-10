@@ -2,7 +2,7 @@
 layout: post
 title: 'Foursquare, Instagram, Redes Sociais e afins'
 date: 2016-02-09
-br: true
+language: pt
 tags: [off-topic]
 ---
 
