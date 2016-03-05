@@ -1,0 +1,26 @@
+title: 'Randson Oliveira'
+email: 'orandson@gmail.com'
+description: 'Thoughts, Articles and The Modern Web'
+sub_name: 'Developer at Codeminer42'
+
+baseurl: '/'
+url: 'http://rands0n.com'
+
+excerpt_separator: '<!--more-->'
+
+# paginate
+paginate: 5
+paginate_path: /page/:num
+
+# exclude folders for ci
+exclude: [vendor]
+
+# permalink
+permalink: :title/
+
+sass:
+    dir: _sass
+    style: compressed
+
+# Build settings
+markdown: kramdown

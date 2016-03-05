@@ -1,0 +1,148 @@
+.masthead {
+    position: fixed;
+    width: 17%;
+    top: 0;
+    text-align: center;
+    padding: 20px 0;
+
+    border-radius: 0 0 6px 6px;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 3px 1px 0 rgba(0,0,0,.1);
+
+    background-color: #f9f9f9;
+
+    .background-info {
+        background: url(../images/masthead-bg.svg) repeat 0 0;
+        width: 100%;
+        margin: -22%;
+        height: 116px;
+        position: absolute;
+        top: 0;
+        left: 46px;
+        z-index: 0;
+    }
+
+    a.info {
+        color: #333;
+        text-decoration: none;
+        position: relative;
+
+        img {
+            border: 2px solid white;
+            border-radius: 50%;
+            box-sizing: content-box;
+            display: inline-block;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 5pc;
+            height: 5pc;
+            margin: 0 .5em;
+            box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
+        }
+
+        h1 {
+            font-size: 1.167em;
+            margin: 0.4em 0 -10px 0px;
+
+            &:hover {
+                color: $brand-color;
+            }
+        }
+
+        .blog-description {
+            color: #999;
+            display: block;
+            font-size: .7em;
+            margin: 5px 0 10px 0;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 10px;
+
+        li {
+
+            a {
+                color: #999;
+                display: block;
+                text-decoration: none;
+                -webkit-transition: color .2s cubic-bezier(.4,0,.2,1);
+                transition: color .2s cubic-bezier(.4,0,.2,1);
+                font-family: 'Noto Serif Regular', serif;
+                font-size: 1em;
+
+                &:hover {
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+
+    .icons {
+        list-style: none;
+        padding: 0;
+        margin-top: 12px;
+        margin-bottom: -8px;
+
+        li {
+            display: inline-block;
+            margin-left: .1em;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                -webkit-box-flex: 0;
+                -webkit-flex: 0 0 auto;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+
+                .icon {
+
+                    svg {
+                        height: 24px;
+                        width: 24px;
+
+                        path {
+                            fill: #CCC;
+                        }
+                    }
+
+                    &.icon-rss {
+                        svg {
+                            width: 28px;
+                            height: 25px;
+                        }
+                    }
+
+                    &:hover {
+                        &.icon-twitter {
+                            path {
+                                fill: #55ACEE;
+                            }
+                        }
+
+                        &.icon-github {
+                            path {
+                                fill: #000000;
+                            }
+                        }
+
+                        &.icon-rss {
+                            path {
+                                fill: orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
