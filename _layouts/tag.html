@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="archive">
+    <h1 class="recent-articles">{{page.title}}</h1>
+
+    <ul class="posts">
+        {% for post in site.posts %}
+            {% for tag in post.tags %}
+                {% if tag == page.tag %}
+                    <li class="post-item">
+                        <a href="{{ post.url }}">
+                            <time class="post-date" datetime="{{ post.date }}">
+                                {{ post.date | date: "%B %d, %Y" }}
+
+                {% if post.br %}
+                <img src="/images/flag_brazil.png" class="br" alt="Portuguese Post">
+                {% endif %}
+                </time>
+                <h2 class="post-title">
+                {{ post.title }}
+                </h2>
+                <p class="post-excerpt">{% if post.description %}{{post.description}} {%else%} {{post.excerpt}}{%endif%}</p>
+                </a>
+                </li>
+                {% endif %}
+            {% endfor; %}
+        {% endfor; %}
+    </ul>
+</div>

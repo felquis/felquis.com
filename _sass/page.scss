@@ -1,0 +1,16 @@
+.page {
+    a {
+        border-bottom: 1px solid $brand-color;
+        text-decoration: none;
+        color: $text-color;
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            border-color: #dadada;
+        }
+    }
+}
