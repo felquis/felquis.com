@@ -5,11 +5,11 @@
     .background-info {
         background: url(../images/masthead-bg.svg) repeat 0 0;
         width: 100%;
-        margin: -22%;
+        // margin: -22%;
         height: 116px;
         position: absolute;
         top: 0;
-        left: 47px;
+        left: 0;
         z-index: 0;
     }
 
@@ -17,6 +17,8 @@
         color: #333;
         text-decoration: none;
         position: relative;
+        width: 100%;
+        display: block;
 
         img {
             border: 2px solid white;
