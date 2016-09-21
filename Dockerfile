@@ -6,11 +6,11 @@ RUN gem install jekyll-paginate
 RUN mkdir -p /app
 WORKDIR /app
 
+EXPOSE 4000
+
 COPY . /app
 
 VOLUME /app
-
-EXPOSE 4000:4000
 
 RUN jekyll build
 
