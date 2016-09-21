@@ -3,6 +3,8 @@ email: 'oi@felquis.com'
 description: 'Diário de um Desenvolvedor Web'
 sub_name: 'Web Developer'
 
+gems: ['jekyll-paginate']
+
 baseurl: '/'
 url: 'http://felquis.com'
 
@@ -24,3 +26,6 @@ sass:
 
 # Build settings
 markdown: kramdown
+
+source: source
+destination: _site
