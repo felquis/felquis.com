@@ -1,18 +1,3 @@
-# FROM jekyll/jekyll:pages
-
-# RUN gem install jekyll
-# RUN gem install jekyll-paginate
-
-# RUN mkdir -p /srv/jekyll
-# WORKDIR /srv/jekyll
-
-# EXPOSE 4000
-
-# COPY . /srv/jekyll
-# VOLUME /srv/jekyll
-
-# https://github.com/grahamc/docker-jekyll
-
 FROM ruby:2.1
 MAINTAINER graham@grahamc.com
 
@@ -29,11 +14,10 @@ RUN gem install \
   jekyll-redirect-from \
   kramdown \
   rdiscount \
-  rouge
+  rouge \
+  jekyll-paginate
 
 VOLUME /src
-EXPOSE 4000
-
 WORKDIR /src
+COPY . /src
 ENTRYPOINT ["jekyll"]
-
